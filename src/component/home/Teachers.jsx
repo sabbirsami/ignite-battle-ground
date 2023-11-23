@@ -39,8 +39,8 @@ const Teachers = () => {
         <div className="container mx-auto px-6">
             <div className="pt-6 pb-16 ">
                 <h2 className="text-5xl">Course instructors</h2>
-                <div className="w-1/12 h-1 bg-black mt-4"></div>
-                <div className="grid grid-cols-4 py-10 gap-6 mt-6">
+                {/* <div className="w-1/12 h-1 bg-black mt-4"></div> */}
+                <div className="grid grid-cols-4 py-10 gap-6 mt-4">
                     {teachers.map((teacher, idx) => (
                         <div className="border" key={idx}>
                             <img src={teacher.img} alt="" className="" />
