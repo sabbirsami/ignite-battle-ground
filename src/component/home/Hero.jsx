@@ -1,11 +1,12 @@
-import campus from "../../assets/camp.webp";
+import campus from "../../assets/camp.png";
+import circle from "../../assets/circles.svg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Hero = () => {
     return (
         <section className="container mx-auto px-6">
             <div className="py-32 grid grid-cols-5 justify-between items-center">
-                <div className="col-span-3 space-y-10">
+                <div className="col-span-3 space-y-10 pb-6">
                     {/* <h1 className="text-4xl">Ignite battle ground</h1> */}
                     <div className="">
                         <h2 className="text-7xl">
@@ -30,8 +31,13 @@ const Hero = () => {
                         </button>
                     </div>
                 </div>
-                <div className="col-span-2">
-                    <img className="w-full" src={campus} alt="" />
+                <div className="col-span-2 relative">
+                    <img className="w-full z-20" src={campus} alt="" />
+                    <img
+                        className="scale-x-[5] w-1/6 mx-auto absolute bottom-10 right-64 -z-10"
+                        src={circle}
+                        alt=""
+                    />
                 </div>
             </div>
         </section>
